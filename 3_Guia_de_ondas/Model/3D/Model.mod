@@ -23,9 +23,7 @@ With Units
     .Conductance "Siemens"
     .Capacitance "PikoF"
 End With
-
 '----------------------------------------------------------------------------
-
 With Background
      .Type "pec"
      .XminSpace "0.0"
@@ -35,9 +33,7 @@ With Background
      .ZminSpace "0.0"
      .ZmaxSpace "0.0"
 End With
-
 ' set boundary conditions to electric
-
 With Boundary
      .Xmin "electric"
      .Xmax "electric"
@@ -49,9 +45,7 @@ With Boundary
      .Ysymmetry "none"
      .Zsymmetry "none"
 End With
-
 Mesh.MinimumCurvatureRefinement "150"
-
 With MeshSettings
      .SetMeshType "HexTLM"
      .Set "StepsPerWaveNear", "20"
@@ -60,33 +54,24 @@ With MeshSettings
      .Set "StepsPerBoxFar", "10"
      .Set "RatioLimitGeometry", "15"
 End With
-
 '----------------------------------------------------------------------------
-
 'set the frequency range
 Solver.FrequencyRange "0", "15"
-
 '----------------------------------------------------------------------------
-
 With MeshSettings
      .SetMeshType "Hex"
      .Set "Version", 1%
 End With
-
 With Mesh
      .MeshType "PBA"
 End With
-
 'set the solver type
 ChangeSolverType("HF Time Domain")
-
-
 
 '@ new component: component1
 
 '[VERSION]2017.1|26.0.1|20170224[/VERSION]
-Component.New "component1" 
-
+Component.New "component1"
 
 '@ define brick: component1:solid1
 
@@ -96,9 +81,9 @@ With Brick
      .Name "solid1" 
      .Component "component1" 
      .Material "Vacuum" 
-     .Xrange "-a/2", "a/2" 
-     .Yrange "-b/2", "b/2" 
-     .Zrange "0", "l" 
+     .Xrange "-g_a/2", "g_a/2" 
+     .Yrange "-g_b/2", "g_b/2" 
+     .Zrange "0", "g_l+1" 
      .Create
 End With
 
@@ -106,8 +91,7 @@ End With
 '@ pick face
 
 '[VERSION]2017.1|26.0.1|20170224[/VERSION]
-Pick.PickFaceFromId "component1:solid1", "1" 
-
+Pick.PickFaceFromId "component1:solid1", "1"
 
 '@ define port: 1
 
@@ -134,14 +118,12 @@ With Port
      .ZrangeAdd "0.0", "0.0" 
      .SingleEnded "False" 
      .Create 
-End With 
-
+End With
 
 '@ pick face
 
 '[VERSION]2017.1|26.0.1|20170224[/VERSION]
-Pick.PickFaceFromId "component1:solid1", "2" 
-
+Pick.PickFaceFromId "component1:solid1", "2"
 
 '@ define port: 2
 
@@ -168,8 +150,7 @@ With Port
      .ZrangeAdd "0.0", "0.0" 
      .SingleEnded "False" 
      .Create 
-End With 
-
+End With
 
 '@ modify port: 1
 
@@ -197,8 +178,7 @@ With Port
      .SingleEnded "False" 
      .Shield "none" 
      .Modify 
-End With 
-
+End With
 
 '@ modify port: 2
 
@@ -226,8 +206,7 @@ With Port
      .SingleEnded "False" 
      .Shield "none" 
      .Modify 
-End With 
-
+End With
 
 '@ define monitor: e-field (f=10)
 
@@ -244,8 +223,7 @@ With Monitor
      .SetSubvolume "-11.43", "11.43", "-5.08", "5.08", "0", "40" 
      .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
      .Create 
-End With 
-
+End With
 
 '@ define monitor: h-field (f=10)
 
@@ -262,8 +240,7 @@ With Monitor
      .SetSubvolume "-11.43", "11.43", "-5.08", "5.08", "0", "40" 
      .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
      .Create 
-End With 
-
+End With
 
 '@ define monitor: e-field (f=13.5)
 
@@ -280,8 +257,7 @@ With Monitor
      .SetSubvolume "-11.43", "11.43", "-5.08", "5.08", "0", "40" 
      .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
      .Create 
-End With 
-
+End With
 
 '@ define monitor: h-field (f=13.5)
 
@@ -298,8 +274,7 @@ With Monitor
      .SetSubvolume "-11.43", "11.43", "-5.08", "5.08", "0", "40" 
      .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
      .Create 
-End With 
-
+End With
 
 '@ define monitor: e-field (f=15)
 
@@ -316,8 +291,7 @@ With Monitor
      .SetSubvolume "-11.43", "11.43", "-5.08", "5.08", "0", "40" 
      .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
      .Create 
-End With 
-
+End With
 
 '@ define monitor: h-field (f=15)
 
@@ -334,14 +308,12 @@ With Monitor
      .SetSubvolume "-11.43", "11.43", "-5.08", "5.08", "0", "40" 
      .SetSubvolumeOffset "0.0", "0.0", "0.0", "0.0", "0.0", "0.0" 
      .Create 
-End With 
-
+End With
 
 '@ define time domain solver parameters
 
 '[VERSION]2017.1|26.0.1|20170224[/VERSION]
 Mesh.SetCreator "High Frequency" 
-
 With Solver 
      .Method "Hexahedral"
      .CalculationType "TD-S"
@@ -359,4 +331,131 @@ With Solver
      .UseSensitivityAnalysis "False"
 End With
 
+'@ new component: component2
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+Component.New "component2" 
+
+
+'@ define brick: component2:solid2
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+With Brick
+     .Reset 
+     .Name "solid2" 
+     .Component "component2" 
+     .Material "PEC" 
+     .Xrange "(-g_a/2)-4", "(g_a/2)+4" 
+     .Yrange "(-g_b/2)-4", "(g_b/2)+4" 
+     .Zrange "0", "g_l" 
+     .Create
+End With
+
+
+'@ change component: component2:solid2 to: component1:solid2
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+Solid.ChangeComponent "component2:solid2", "component1" 
+
+
+'@ delete component: component2
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+Component.Delete "component2" 
+
+
+'@ define cylinder: component1:solid3
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "solid3" 
+     .Component "component1" 
+     .Material "PEC" 
+     .OuterRadius "c_a/2" 
+     .InnerRadius "c_b/2" 
+     .Axis "y" 
+     .Yrange "g_b/2", "c_l" 
+     .Xcenter "0" 
+     .Zcenter "11" 
+     .Segments "0" 
+     .Create 
+End With 
+
+
+'@ paste structure data: 1
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+With SAT 
+     .Reset 
+     .FileName "*1.cby" 
+     .SubProjectScaleFactor "0.001" 
+     .ImportToActiveCoordinateSystem "True" 
+     .ScaleToUnit "True" 
+     .Curves "False" 
+     .Read 
+End With 
+
+
+
+'@ rename block: component1:solid3_1 to: component1:solid4
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+Solid.Rename "component1:solid3_1", "solid4"
+
+
+'@ split shape: component1:solid4
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+Solid.SplitShape "solid4", "component1" 
+
+
+'@ delete shape: component1:solid4
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+Solid.Delete "component1:solid4" 
+
+
+'@ define cylinder: component1:solid4
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "solid4" 
+     .Component "component1" 
+     .Material "PEC" 
+     .OuterRadius "c_g/2" 
+     .InnerRadius "0.0" 
+     .Axis "y" 
+     .Yrange "g_b/2", "c_l" 
+     .Xcenter "0" 
+     .Zcenter "11" 
+     .Segments "0" 
+     .Create 
+End With 
+
+
+'@ define cylinder: component1:solid5
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+With Cylinder 
+     .Reset 
+     .Name "solid5" 
+     .Component "component1" 
+     .Material "Vacuum" 
+     .OuterRadius "c_b/2" 
+     .InnerRadius "c_g/2" 
+     .Axis "y" 
+     .Yrange "g_b/2", "c_l+1" 
+     .Xcenter "0" 
+     .Zcenter "11" 
+     .Segments "0" 
+     .Create 
+End With 
+
+
+'@ boolean insert shapes: component1:solid2, component1:solid5
+
+'[VERSION]2017.1|26.0.1|20170224[/VERSION]
+Solid.Insert "component1:solid2", "component1:solid5" 
 

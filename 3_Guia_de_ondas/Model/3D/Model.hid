@@ -4,24 +4,6 @@
 [start]history_fast_undo
 [start]undo_item
 [start]block_index
-3
-[end]block_index
-[start]command
-[end]command
-[start]content
-
-Solid.Delete "component1:solid1"
-
-[end]content
-[start]recover_picks
-1
-[end]recover_picks
-[start]delete_solids
-1
-[end]delete_solids
-[end]undo_item
-[start]undo_item
-[start]block_index
 4
 [end]block_index
 [start]command
@@ -40,7 +22,6 @@ Solid.Delete "component1:solid1"
 5
 [end]block_index
 [start]command
-
 '@ define port: 1
  (undo)
 [end]command
@@ -74,7 +55,6 @@ Port.Delete "1"
 7
 [end]block_index
 [start]command
-
 '@ define port: 2
  (undo)
 [end]command
@@ -93,7 +73,6 @@ Port.Delete "2"
 8
 [end]block_index
 [start]command
-
 '@ modify port: 1
  (undo)
 [end]command
@@ -112,7 +91,6 @@ Port.Delete "1"
 9
 [end]block_index
 [start]command
-
 '@ modify port: 2
  (undo)
 [end]command
@@ -124,6 +102,66 @@ Port.Delete "2"
 [end]recover_picks
 [start]delete_solids
 0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+21
+[end]block_index
+[start]command
+[end]command
+[start]content
+
+Solid.Delete "component1:solid3"
+
+Solid.Delete "component1:solid3"
+
+Solid.Delete "component1:solid3"
+
+Solid.Delete "component1:solid3"
+
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+1
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+26
+[end]block_index
+[start]command
+[end]command
+[start]content
+
+Solid.Delete "component1:solid4"
+
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+1
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+27
+[end]block_index
+[start]command
+[end]command
+[start]content
+
+Solid.Delete "component1:solid5"
+
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+1
 [end]delete_solids
 [end]undo_item
 [end]history_fast_undo
