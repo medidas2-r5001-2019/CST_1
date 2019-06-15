@@ -1,0 +1,323 @@
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2019 Apr 27 (Sat): 11:58:10
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+======================================================
+ - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+ - desired group         : 0, sockets = 0,1
+ - num cores available   : 4
+ - affinity (main thread): 11 11 
+ - hyperthreading        : on
+ - allowed socket ids    : 0
+ - allowed core ids      : 0,2
+ - used mask (string)    : 10 10 
+======================================================
+
+===============================
+Port preparation
+Version 2017.1 (build 20170224)
+2019 Apr 27 (Sat): 11:58:10
+===============================
+
+==========================
+Finished port preparation.
+==========================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2019 Apr 27 (Sat): 11:58:11
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2019 Apr 27 (Sat): 11:58:11
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+==============================
+Mesher selection: manual: FPBA
+==============================
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2019 Apr 27 (Sat): 11:58:11
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+======================================================
+ - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+ - desired group         : 0, sockets = 0
+ - num cores available   : 4
+ - affinity (main thread): 11 11 
+ - hyperthreading        : on
+ - allowed socket ids    : 0
+ - allowed core ids      : 0,2
+ - used mask (string)    : 10 10 
+======================================================
+
+===============================
+Matrix computation (PBA)
+Version 2017.1 (build 20170224)
+2019 Apr 27 (Sat): 11:58:11
+===============================
+
+----------------------------------------------
+Used point accuracy enhancement value: 75.00%.
+----------------------------------------------
+
+Shapes are ordered to support shape wise matrix storage
+==================================================================================================
+== CST Matrix Calculation Priority Log                                                          ==
+==================================================================================================
+ 
+Priorities are sorted in ascending order beginning with the lowest priority
+ 
+Priority:   3, shape   1: component1:solid1__1_0, material: Vacuum
+ 
+==================================================================================================
+ 
+Shapes are ordered to support shape wise matrix storage
+------------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+settings for port mode calculation
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PBA fill limit is applied in inverse mode.
+PBA fill limit is applied on faces filled with at least 99.00% metal material.
+--------------------------------------------------------------
+detailed accuracy settings:
+--------------------------------------------------------------
+augmented fill limit:       true
+augmented fill limit value: 99.00
+automatic fill limit:       true
+early fill limit:           true
+inverse fill limit:         true
+model complexity:           0.00
+legacy 2015:                false
+fixed point accuracy:       false
+minimum point accuracy:     0
+mesh step inheritance:      false
+accuracy mode:              
+------------------------------------------------------------------------------
+
+=================================
+Finished matrix computation (PBA)
+=================================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2019 Apr 27 (Sat): 11:58:12
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2019 Apr 27 (Sat): 11:58:12
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2019 Apr 27 (Sat): 12:01:46
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+======================================================
+ - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+ - desired group         : 0, sockets = 0
+ - num cores available   : 4
+ - affinity (main thread): 11 11 
+ - hyperthreading        : on
+ - allowed socket ids    : 0
+ - allowed core ids      : 0,2
+ - used mask (string)    : 10 10 
+======================================================
+
+========================================================================
+Processing CAD model (for field results)
+	[Accuracy improvement for long shapes in inhomogeneous mesh regions]
+Version 2017.1 (build 20170224)
+2019 Apr 27 (Sat): 12:01:46
+========================================================================
+
+Shapes are ordered to support shape wise matrix storage
+Shapes are ordered to support shape wise matrix storage
+===========================================
+Finished CAD processing (for field results)
+===========================================
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2019 Apr 27 (Sat): 12:01:47
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2019 Apr 27 (Sat): 12:01:55
+<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+======================
+Mesher selection: FPBA
+======================
+
+======================================================
+ - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+ - desired group         : 0, sockets = 0
+ - num cores available   : 4
+ - affinity (main thread): 11 11 
+ - hyperthreading        : on
+ - allowed socket ids    : 0
+ - allowed core ids      : 0,2
+ - used mask (string)    : 10 10 
+======================================================
+
+========================================================================
+Processing CAD model
+	[Accuracy improvement for long shapes in inhomogeneous mesh regions]
+Version 2017.1 (build 20170224)
+2019 Apr 27 (Sat): 12:01:55
+========================================================================
+
+----------------------------------------------
+Used point accuracy enhancement value: 75.00%.
+----------------------------------------------
+
+=============================================================================
+Mesh statistics:
+-----------------------------------------------------------------------------
+Minimum edge length (x): 1.27 @ mesh line 17 (x)
+Maximum edge length (x): 1.27 @ mesh line 9 (x)
+Minimum face area (x): 1.64 @ mesh lines 7 | 28 (y | z)
+Maximum face area (x): 1.64 @ mesh lines 4 | 24 (y | z)
+Minimum edge length (y): 1.27 @ mesh line 7 (y)
+Maximum edge length (y): 1.27 @ mesh line 4 (y)
+Minimum face area (y): 1.64 @ mesh lines 28 | 17 (z | x)
+Maximum face area (y): 1.64 @ mesh lines 24 | 9 (z | x)
+Minimum edge length (z): 1.29 @ mesh line 28 (z)
+Maximum edge length (z): 1.29 @ mesh line 24 (z)
+Minimum face area (z): 1.61 @ mesh lines 17 | 7 (x | y)
+Maximum face area (z): 1.61 @ mesh lines 9 | 4 (x | y)
+Maximum mesh face aspect ratio (x): 1.02 : 1.0  @ mesh lines 7 | 24 (y | z)
+Maximum mesh face aspect ratio (y): 1.02 : 1.0  @ mesh lines 24 | 17 (z | x)
+Maximum mesh face aspect ratio (z): 1 : 1.0  @ mesh lines 17 | 4 (x | y)
+=============================================================================
+
+==============================================================================
+Available resources to store TST cells: 2147478175 (39244849.69% of mesh size)
+==============================================================================
+
+Shapes are ordered to support shape wise matrix storage
+Shapes are ordered to support shape wise matrix storage
+=======================
+Finished CAD processing
+=======================
+
+------------------------------------------------------------
+Parallelization Info
+------------------------------------------------------------
+Number of concurrent threads: 1
+Number of node domains: 1
+Number of mesh cells: 4464
+------------------------------------------------------------
+Node order
+0
+------------------------------------------------------------
+
+1xN000:  <<<<<<<<<<<<<<<<<<<<<<<<<<<
+         2019 Apr 27 (Sat): 12:01:56
+         <<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+1xN000:  ======================================================
+          - pinning rule in use   : PINNING_RULE_MCALC_SKIP_ALL
+          - desired group         : 0, sockets = 0
+          - num cores available   : 4
+          - affinity (main thread): 11 11
+          - hyperthreading        : on
+          - allowed socket ids    : 0
+          - allowed core ids      : 0,2
+          - used mask (string)    : 10 10
+
+         ======================================================
+
+1xN000:  ===============================
+         Matrix computation (PBA)
+         Version 2017.1 (build 20170224)
+         2019 Apr 27 (Sat): 12:01:56
+         ===============================
+
+1xN000:  Shapes are ordered to support shape wise matrix storage
+1xN000:  ------------------------------------------------------------------------------
+         PBA fill limit is applied in inverse mode.
+         PBA fill limit is applied on faces filled with at least 99.00% metal material.
+         --------------------------------------------------------------
+         detailed accuracy settings:
+         --------------------------------------------------------------
+         augmented fill limit:       true
+         augmented fill limit value: 99.00
+         automatic fill limit:       true
+         early fill limit:           true
+         inverse fill limit:         true
+         model complexity:           0.00
+         legacy 2015:                false
+         fixed point accuracy:       false
+         minimum point accuracy:     0
+         mesh step inheritance:      false
+         accuracy mode:
+         ------------------------------------------------------------------------------
+
+1xN000:  =================================
+         Finished matrix computation (PBA)
+         =================================
+
+1xN000:  >>>>>>>>>>>>>>>>>>>>>>>>>>>
+         2019 Apr 27 (Sat): 12:01:58
+         >>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2019 Apr 27 (Sat): 12:02:00
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+
+--------------------------------
+# of staircase filled cells: 0
+# of staircase filled areas: 0
+# of staircase filled edges: 0
+# of faces above fill limit: 0
+# of edges with FPBA topology: 0
+--------------------------------
+

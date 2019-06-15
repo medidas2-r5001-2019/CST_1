@@ -1,0 +1,788 @@
+
+Solver started at: 11:58 AM Saturday, 27. April 2019
+
+  Module:  Port Modes (Win 32)
+  Version: 2017.1 Release from 2017-02-24 (change 501070)
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+======================================================================
+ Port mode calculation
+======================================================================
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Mesh statistics:
+
+   Hexahedral mesh type: PBA [accuracy enhancement is enabled]
+
+   Parallelization type: none
+
+   Used point accuracy enhancement value: 75.00%.
+
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: electric
+  Xmax: electric
+
+  Ymin: electric
+  Ymax: electric
+
+  Zmin: electric
+  Zmax: electric
+
+  PML-Type: ---
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0
+  Fmax:         15
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Waveguide boundaries:
+
+Port: 1
+
+  -------------------------------- F-Calc 7.5 --------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TE          773           1.29e-012     ---           6.549
+  1      2      TE          265           3.37e-013     ---           13.05
+  1      3      TE          224           3.21e-013     ---           14.66
+  ----------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Frequency domain results unnormalized.
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Number of mesh cells: 	288 
+  Mesh generation time: 	1      	s
+
+--------------------------------------------------------------------------------
+  Total port mode calculation time:            	2      	s
+
+--------------------------------------------------------------------------------
+Solver finished at: 11:58 AM Saturday, 27. April 2019
+
+
+--------------------------------------------------------------------------------
+
+Solver started at: 12:01 PM Saturday, 27. April 2019
+
+  Module:  Time Domain: S-Parameter (Win 32)
+  Version: 2017.1 Release from 2017-02-24 (change 501070)
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 1
+======================================================================
+
+Stimulation at port 1 (mode 1) 
+
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+2019 Apr 27: 12:01:55: current system memory usage reached 85%
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Mesh statistics:
+
+   Hexahedral mesh type: PBA [accuracy enhancement is enabled]
+
+   Parallelization type: domain decomposition
+      Number of parallel working threads: 1
+      Number of calculation domains used: 1
+
+   PBA fill limit: 99.00% (inverse)
+
+
+--------------------------------------------------------------------------------
+Using generalized port mode solver.
+
+--------------------------------------------------------------------------------
+Automatically activated electric shielding for port 1, 2.
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: electric
+  Xmax: electric
+
+  Ymin: electric
+  Ymax: electric
+
+  Zmin: electric
+  Zmax: electric
+
+  PML-Type: ---
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0
+  Fmax:         15
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+Waveguide boundaries:
+
+Port: 1
+
+  -------------------------------- F-Calc 7.5 --------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  1      1      TE          775           1.99e-007     ---           6.551
+  1      2      TE          265           1.56e-006     ---           13.07
+  1      3      TE          224           3.10e-006     ---           14.69
+  ----------------------------------------------------------------------------
+
+Port: 2
+
+  -------------------------------- F-Calc 7.5 --------------------------------
+  Port   Mode   Type        Z-Wave        Z-Wave-Sigma  Z-Line        F-Cutoff
+  2      1      TE          775           8.56e-007     ---           6.551
+  2      2      TE          265           9.11e-006     ---           13.07
+  2      3      TE          224           9.45e-006     ---           14.69
+  ----------------------------------------------------------------------------
+
+*** Warning ***
+
+The following port mode is at least partially excited below its cutoff
+frequency: 1(1). 
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	29691
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Maximum simulation time reached, solver stopped.
+Please note that the steady state energy criterion has not been satisfied.
+More...
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Matrices calc.      22452                         635332       618168       
+  Solver run total    29588                         675612       625740       
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-FDAS5LD 
+
+     Number of CPU threads:             2
+     Hardware info:                  	Hardware acceleration not activated
+
+  Number of mesh cells:             	4464
+  Excitation duration:              	2.36969917e-001 ns 
+  Calculation time for excitation:  	0 	s
+  Number of calculated pulse widths:	20 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	1985 
+  Maximum number of time steps:     	1985 
+  Time step width:
+     without subcycles:             	2.38760115e-003 ns
+     used:                          	2.38760115e-003 ns
+
+  Matrix calculation time:          	5 	s
+  Solver setup time:                	3 	s
+  Solver loop time:                 	1 	s
+  Solver post processing time:      	1 	s
+                                    	------------
+  Total solver time:                	10 	s
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 2
+======================================================================
+
+Stimulation at port 1 (mode 2) 
+
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+2019 Apr 27: 12:02:05: current system memory usage reached 85%
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: electric
+  Xmax: electric
+
+  Ymin: electric
+  Ymax: electric
+
+  Zmin: electric
+  Zmax: electric
+
+  PML-Type: ---
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0
+  Fmax:         15
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The following port mode is at least partially excited below its cutoff
+frequency: 1(2). 
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	29691
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Maximum simulation time reached, solver stopped.
+Please note that the steady state energy criterion has not been satisfied.
+More...
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Matrices calc.      22452                         635332       618168       
+  Solver run total    30320                         669668       669668       
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-FDAS5LD 
+
+     Number of CPU threads:             2
+     Hardware info:                  	Hardware acceleration not activated
+
+  Number of mesh cells:             	4464
+  Excitation duration:              	2.36969917e-001 ns 
+  Calculation time for excitation:  	0 	s
+  Number of calculated pulse widths:	20 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	1985 
+  Maximum number of time steps:     	1985 
+  Time step width:
+     without subcycles:             	2.38760115e-003 ns
+     used:                          	2.38760115e-003 ns
+
+  Reloading matrices:               	0 	s
+  Solver setup time:                	2 	s
+  Solver loop time:                 	0 	s
+  Solver post processing time:      	1 	s
+                                    	------------
+  Total solver time:                	3 	s
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 3
+======================================================================
+
+Stimulation at port 1 (mode 3) 
+
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+2019 Apr 27: 12:02:09: current system memory usage reached 85%
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: electric
+  Xmax: electric
+
+  Ymin: electric
+  Ymax: electric
+
+  Zmin: electric
+  Zmax: electric
+
+  PML-Type: ---
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0
+  Fmax:         15
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The following port mode is at least partially excited below its cutoff
+frequency: 1(3). 
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	29691
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Maximum simulation time reached, solver stopped.
+Please note that the steady state energy criterion has not been satisfied.
+More...
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Matrices calc.      22452                         635332       618168       
+  Solver run total    30864                         692456       692456       
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-FDAS5LD 
+
+     Number of CPU threads:             2
+     Hardware info:                  	Hardware acceleration not activated
+
+  Number of mesh cells:             	4464
+  Excitation duration:              	2.36969917e-001 ns 
+  Calculation time for excitation:  	0 	s
+  Number of calculated pulse widths:	20 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	1985 
+  Maximum number of time steps:     	1985 
+  Time step width:
+     without subcycles:             	2.38760115e-003 ns
+     used:                          	2.38760115e-003 ns
+
+  Reloading matrices:               	0 	s
+  Solver setup time:                	2 	s
+  Solver loop time:                 	0 	s
+  Solver post processing time:      	1 	s
+                                    	------------
+  Total solver time:                	3 	s
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 4
+======================================================================
+
+Stimulation at port 2 (mode 1) 
+
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+2019 Apr 27: 12:02:14: current system memory usage reached 85%
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: electric
+  Xmax: electric
+
+  Ymin: electric
+  Ymax: electric
+
+  Zmin: electric
+  Zmax: electric
+
+  PML-Type: ---
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0
+  Fmax:         15
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The following port mode is at least partially excited below its cutoff
+frequency: 2(1). 
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	29691
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Maximum simulation time reached, solver stopped.
+Please note that the steady state energy criterion has not been satisfied.
+More...
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Matrices calc.      22452                         635332       618168       
+  Solver run total    31196                         693480       693480       
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-FDAS5LD 
+
+     Number of CPU threads:             2
+     Hardware info:                  	Hardware acceleration not activated
+
+  Number of mesh cells:             	4464
+  Excitation duration:              	2.36969917e-001 ns 
+  Calculation time for excitation:  	0 	s
+  Number of calculated pulse widths:	20 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	1985 
+  Maximum number of time steps:     	1985 
+  Time step width:
+     without subcycles:             	2.38760115e-003 ns
+     used:                          	2.38760115e-003 ns
+
+  Reloading matrices:               	0 	s
+  Solver setup time:                	2 	s
+  Solver loop time:                 	1 	s
+  Solver post processing time:      	0 	s
+                                    	------------
+  Total solver time:                	3 	s
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 5
+======================================================================
+
+Stimulation at port 2 (mode 2) 
+
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+2019 Apr 27: 12:02:18: current system memory usage reached 85%
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: electric
+  Xmax: electric
+
+  Ymin: electric
+  Ymax: electric
+
+  Zmin: electric
+  Zmax: electric
+
+  PML-Type: ---
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0
+  Fmax:         15
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The following port mode is at least partially excited below its cutoff
+frequency: 2(2). 
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	29691
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Maximum simulation time reached, solver stopped.
+Please note that the steady state energy criterion has not been satisfied.
+More...
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Matrices calc.      22452                         635332       618168       
+  Solver run total    31196                         697288       697288       
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-FDAS5LD 
+
+     Number of CPU threads:             2
+     Hardware info:                  	Hardware acceleration not activated
+
+  Number of mesh cells:             	4464
+  Excitation duration:              	2.36969917e-001 ns 
+  Calculation time for excitation:  	0 	s
+  Number of calculated pulse widths:	20 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	1985 
+  Maximum number of time steps:     	1985 
+  Time step width:
+     without subcycles:             	2.38760115e-003 ns
+     used:                          	2.38760115e-003 ns
+
+  Reloading matrices:               	0 	s
+  Solver setup time:                	2 	s
+  Solver loop time:                 	1 	s
+  Solver post processing time:      	0 	s
+                                    	------------
+  Total solver time:                	3 	s
+
+--------------------------------------------------------------------------------
+======================================================================
+ Solver cycle: 6
+======================================================================
+
+Stimulation at port 2 (mode 3) 
+
+
+--------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: mm
+  Frequency:  GHz
+  Time:       ns
+
+--------------------------------------------------------------------------------
+Boundary conditions: 
+
+  YZsymmetry: none
+  XZsymmetry: none
+  XYsymmetry: none
+
+  Xmin: electric
+  Xmax: electric
+
+  Ymin: electric
+  Ymax: electric
+
+  Zmin: electric
+  Zmax: electric
+
+  PML-Type: ---
+
+--------------------------------------------------------------------------------
+Frequency settings: 
+
+  Fmin:         0
+  Fmax:         15
+  Nfsteps(lin): 1001
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+The following port mode is at least partially excited below its cutoff
+frequency: 2(3). 
+
+--------------------------------------------------------------------------------
+Field update statistics:
+
+  Number of components in total: 	29691
+
+Subcycling state:      Automatically deactivated
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+*** Warning ***
+
+Maximum simulation time reached, solver stopped.
+Please note that the steady state energy criterion has not been satisfied.
+More...
+
+--------------------------------------------------------------------------------
+Frequency domain results normalized to default signal.
+
+--------------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
+                      Peak memory used (kB)         Free physical memory (kB) 
+                                                    At begin     Minimum      
+  ----------------------------------------------------------------------------
+  Matrices calc.      22452                         635332       618168       
+  Solver run total    31196                         737312       737248       
+  ----------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Solver Statistics:
+
+  Hardware:
+     Computer name:                 	DESKTOP-FDAS5LD 
+
+     Number of CPU threads:             2
+     Hardware info:                  	Hardware acceleration not activated
+
+  Number of mesh cells:             	4464
+  Excitation duration:              	2.36969917e-001 ns 
+  Calculation time for excitation:  	0 	s
+  Number of calculated pulse widths:	20 
+  Steady state accuracy limit:      	-40	dB 
+  Simulated number of time steps:   	1985 
+  Maximum number of time steps:     	1985 
+  Time step width:
+     without subcycles:             	2.38760115e-003 ns
+     used:                          	2.38760115e-003 ns
+
+  Reloading matrices:               	0 	s
+  Solver setup time:                	2 	s
+  Solver loop time:                 	1 	s
+  Solver post processing time:      	1 	s
+                                    	------------
+  Total solver time:                	4 	s
+
+--------------------------------------------------------------------------------
+
+  Adaptive port meshing time:       	8      	s
+  Total solver time (all cycles):   	32     	s
+                                    	------------
+  Total simulation time:            	40     	s
+
+--------------------------------------------------------------------------------
+Solver finished at: 12:02 PM Saturday, 27. April 2019
+
+
+--------------------------------------------------------------------------------
+Creating parametric 1D results for Run ID 1
+
+--------------------------------------------------------------------------------

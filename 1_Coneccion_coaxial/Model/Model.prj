@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+rvide
+[Mesh Cells]
+
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Time Domain
+[Last Solver Type Abb]
+t
+[Results]
+Unavailable
+[Modeler Unique ID]
+5:1_coneccion_coaxial.cst?26b730351480c371c035bc1c3beeed1a?7215:numberofparameters=4:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::l?g?a?b
+[Comment]
