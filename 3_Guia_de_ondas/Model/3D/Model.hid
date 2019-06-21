@@ -111,15 +111,10 @@ Port.Delete "2"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:solid3"
-
 Solid.Delete "component1:solid3"
-
 Solid.Delete "component1:solid3"
-
 Solid.Delete "component1:solid3"
-
 [end]content
 [start]recover_picks
 1
@@ -135,9 +130,7 @@ Solid.Delete "component1:solid3"
 [start]command
 [end]command
 [start]content
-
 Solid.Delete "component1:solid4"
-
 [end]content
 [start]recover_picks
 1
@@ -148,13 +141,13 @@ Solid.Delete "component1:solid4"
 [end]undo_item
 [start]undo_item
 [start]block_index
-27
+39
 [end]block_index
 [start]command
 [end]command
 [start]content
 
-Solid.Delete "component1:solid5"
+Solid.Delete "component1:COAX_VACIO"
 
 [end]content
 [start]recover_picks

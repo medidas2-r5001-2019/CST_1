@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+rvide
+[Mesh Cells]
+115,872
+[Mesh Type]
+Hexahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Time Domain
+[Last Solver Type Abb]
+t
+[Results]
+Time Domain: S-Parameter
+[Modeler Unique ID]
+5:3_guia_de_ondas2.cst?aad4416d4fe01912ae0f6751e372d484?15665:numberofparameters=9:port=1>mode=1>zre=0>zim=0?port=1>mode=2>zre=0>zim=0?port=1>mode=3>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::g_l2?lambda?c_dext?c_dint?c_dpin?c_largo?g_a?g_b?g_l1
+[Comment]
